@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+
+</head>
+ <style>
+    body {
+        background-color: rgb(211, 211, 211);
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+    .container {
+        display: flex;
+        margin-top: 20px;
+    }
+    .container2 {
+        display: flex;
+        margin-top: 20px;
+    }
+    header {
+        background-color: #FF0000;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+    h1 {
+        color: white;
+    }
+    img {
+        max-width: 50%; 
+        object-fit: cover;
+        height: auto; 
+        border-radius: 25px;
+    }
+    .multimodo{
+        background-color: beige;
+        width: 50%;
+        margin-right: 20px;
+        border-radius: 25px;  
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        flex-direction: column;
+    }
+    .monomodo{
+        background-color: beige;
+        width: 50%;
+        margin-right: 20px;
+        border-radius: 25px;  
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        flex-direction: column;     
+    }
+    .RJ-45{
+        background-color: beige;
+        width: 50%;
+        margin-right: 20px;
+        border-radius: 25px;  
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        flex-direction: column;     
+    }
+    .SCHUKO{
+        background-color: beige;
+        width: 50%;
+        margin-right: 20px;
+        border-radius: 25px;  
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        flex-direction: column;    
+    }   
+    p {
+        color: #666;
+    }
+    img{
+        width: auto;
+        height: auto;
+        max-height: 300px;
+    }
+    </style>
+<body>
+    <header>
+        <h1>Inventario</h1>
+    </header>
+    <div class="container">
+        <div class="multimodo">
+            <h2>Multimodo</h2>
+            <img src="multimodo.png">
+            <br>
+            <input type="button" value="Ver Inventario" onclick="location.href='multimodo.php'">
+        </div>
+        <div class="monomodo">
+            <h2>Monomodo</h2>
+            <img src="monomodo.png">
+            <br>
+            <input type="button" value="Ver Inventario" onclick="location.href='monomodo.php'">
+        </div>
+    </div>
+    <div class="container2">
+        <div class="RJ-45">
+            <h2>RJ-45</h2>
+            <img src="rj.png" >
+            <br>
+            <input type="button" value="Ver Inventario" onclick="location.href='rj-45.php'">
+        </div>
+        <div class="SCHUKO">
+            <h2>SCHUKO</h2>
+            <img src="schuko.png" >
+            <br>
+            <input type="button" value="Ver Inventario" onclick="location.href='SCHUKO.php'">
+    </div>   
+</body>
+</html>
